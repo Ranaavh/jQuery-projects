@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing Table</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h2>Billing Table</h2>
+
+    <table id="billing-table">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total</th>
+            
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="text" class="item" placeholder="Enter item"></td>
+                <td><input type="text" class="quantity" placeholder="Enter quantity"></td>
+                <td><input type="text" class="price" placeholder="Enter price"></td>
+                <td><input type="text" class="total" readonly></td>
+                <td>
+                    <button class="add-row">+</button>
+                    <button class="remove-row">x</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <div class="total-row">
+        <label>Subtotal:</label>
+        <input type="text" id="subtotal" readonly>
+    </div>
+    <div class="total-row">
+        <label>Tax (10%):</label>
+        <input type="text" id="tax" readonly>
+    </div>
+    <div class="total-row">
+        <label>Total:</label>
+        <input type="text" id="grandtotal" readonly>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

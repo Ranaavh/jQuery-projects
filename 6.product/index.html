@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Image Gallery</title>
+    <link rel="stylesheet" href="css/stylle.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="thumbnail-container">
+            <img src="./img/bag-front.jpg" alt="Product 1" class="thumbnail" onclick="enlargeImage('image1.jpg')">
+            <img src="./img/bag--back.jpg" alt="Product 2" class="thumbnail" onclick="enlargeImage('image2.jpg')">
+            <img src="./img/bag-opening.jpg" alt="Product 3" class="thumbnail" onclick="enlargeImage('image3.jpg')">
+            <img src="./img/bag-side.jpg" alt="Product 4" class="thumbnail" onclick="enlargeImage('image4.jpg')">
+        
+        </div>
+        <div class="enlarged-image-container">
+            <img id="enlarged-image" src="./img/bag-front.jpg" alt="Enlarged Product">
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
