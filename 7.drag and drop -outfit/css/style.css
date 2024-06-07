@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.side-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+#side{
+    border: 1px solid #b7b2b2;}
+
+.side-container img {
+    max-width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+.costumes-container {
+    flex: 1;
+    flex-wrap: wrap;
+   
+    gap: 10px;
+}
+
+.costumes-container img {
+    width: 200px;
+    height: 150px;
+    cursor: pointer;
+    border: 1px solid #b7b2b2;
+    padding: 10px;
+   
+}
