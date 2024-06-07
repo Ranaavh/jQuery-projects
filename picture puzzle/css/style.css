@@ -1,0 +1,50 @@
+/* styles.css */
+#puzzle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#center-container {
+    width: 305px; /* Adjust to 300px to avoid extra gap */
+    height: 305px; /* Adjust to 300px to avoid extra gap */
+    
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px; /* Add space between the center and below containers */
+    box-sizing: border-box; /* Ensure padding and border are included in the width and height */
+}
+
+#below-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 700px; /* Adjust width to fit pieces with gaps */
+    border: 1px solid #000;
+    padding: 10px;
+    box-sizing: border-box; /* Ensure padding and border are included in the width and height */
+}
+
+#below-container .puzzle-piece {
+    margin-left: 10px;
+}
+
+.puzzle-piece {
+    width: 100px;
+    height: 100px;
+    background-size: 300px 300px;
+    cursor: pointer;
+    position: relative;
+}
+
+.partition {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    position: relative;
+    box-sizing: border-box; /* Ensure border is included in the width and height */
+    margin: 0; /* Reset margin to avoid extra space */
+    padding: 0; /* Reset padding to avoid extra space */
+}
